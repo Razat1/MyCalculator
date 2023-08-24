@@ -7,7 +7,7 @@ public class Calc {
         int num1 = userInput.nextInt();
         System.out.println("Please enter your second number: ");
         int num2 = userInput.nextInt();
-        //int add = num1 + num2;
+
         int resultAdd = addition(num1, num2);
         System.out.println("Your numbers added are " + num1 + " + " + num2 + " = " + resultAdd);
         int resultSub = subtract(num1, num2);
@@ -19,22 +19,19 @@ public class Calc {
     }
 
     public static int addition(int a, int b) {
-        int result = a + b;
-        return result;
-    }
-    public static int subtract(int a, int b){
-        int result = a - b;
-        return result;
+        return a + b;
     }
 
-    public static int multiplied(int a, int b){
-        int result = a * b;
-        return result;
+    public static int subtract(int a, int b) {
+        return a - b;
     }
 
-    public static int divided(int a, int b){
-        int result = a / b;
-        return result;
+    public static int multiplied(int a, int b) {
+        return a * b;
+    }
+
+    public static int divided(int a, int b) {
+        return a / b;
     }
 
 }
